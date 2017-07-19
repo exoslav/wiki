@@ -20,7 +20,6 @@ const listReducer = (state = initialState, action) => {
             [action.key]: action.value
           })
         }
-
         return game
       })
       break
