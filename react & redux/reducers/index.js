@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-import gameReducer from './reducer_game'
+import listReducer from './reducer_list'
 import controlsReducer from './reducer_controls'
 
 const rootReducer = combineReducers({
   controls: controlsReducer,
-  games: gameReducer
+  list: listReducer
 })
 
 export default rootReducer
