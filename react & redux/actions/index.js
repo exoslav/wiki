@@ -1,4 +1,2 @@
-export const editGame = (index, key, value) => ({type: 'EDIT_GAME', index, key, value})
-export const addGame = game => ({type: 'ADD_GAME', game})
-export const playGame = () => ({type: 'PLAY'})
-export const pauseGame = () => ({type: 'PAUSE'})
+export const add = () => ({type: 'ADD'})
+export const delete = (index) => ({type: 'DELETE', index})
