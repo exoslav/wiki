@@ -8,12 +8,15 @@ const initialState = [
 const listReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD':
-      return state.concat(action.game)
+      return state.concat({
+        name: action.name,
+        text: action.text
+      })
       break
-    case 'DELETE':
-      return state.map((game, index) => {
+    case 'EDIT':
+      return state.map((listItem, index) => {
         if(index === action.index) {
-          return Object.assign({}, game, {
+          return Object.assign({}, listItem, {
             [action.key]: action.value
           })
         }
