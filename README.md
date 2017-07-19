@@ -1,2 +1,1 @@
-# wiki
-frontend features
+#React & redux app - configuration
