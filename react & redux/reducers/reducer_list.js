@@ -1,26 +1,16 @@
 const initialState = [
   {
     name: null,
-    rows: null,
-    cells: null,
-    initialBoard: null,
-    finalBoard: null,
-    timer: null,
-    isValid: false,
-    shouldPause: false,
-    isPlaying: false,
-    livingCells: [],
-    Board: null,
-    GraphChart: null
+    text: ''
   }
 ]
 
-const gameReducer = (state = initialState, action) => {
+const listReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD_GAME':
+    case 'ADD':
       return state.concat(action.game)
       break
-    case 'EDIT_GAME':
+    case 'DELETE':
       return state.map((game, index) => {
         if(index === action.index) {
           return Object.assign({}, game, {
@@ -36,4 +26,4 @@ const gameReducer = (state = initialState, action) => {
   }
 }
 
-export default gameReducer
+export default listReducer
