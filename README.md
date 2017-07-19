@@ -1,1 +1,1 @@
-#React & redux app - configuration
+# React & redux app - configuration
