@@ -1,2 +1,2 @@
-export const add = () => ({type: 'ADD'})
-export const delete = (index) => ({type: 'DELETE', index})
+export const add = (name, text) => ({type: 'ADD', name, text})
+export const edit = (index, key, value) => ({type: 'DELETE', key, value})
